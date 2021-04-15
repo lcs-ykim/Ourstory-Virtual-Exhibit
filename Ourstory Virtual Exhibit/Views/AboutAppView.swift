@@ -9,7 +9,17 @@ import SwiftUI
 
 struct AboutAppView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            
+            Image()// My photo
+                .resizable()
+                .scaledToFit()
+            
+            Text()// What I want to say, "Thanks to Mr.Gordon"
+                .padding()
+
+        }
+        .navigationTitle("The OurStory Exhibit")
     }
 }
 

@@ -9,7 +9,45 @@ import SwiftUI
 
 struct PAGEView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            
+            Image()// Group photo
+                .resizable()
+                .scaledToFit()
+            
+            Text()// Group Intro
+                .padding()
+            
+            Image()// Individual photo 1
+                .resizable()
+                .scaledToFit()
+            
+            Text()// Description 1
+                .padding()
+
+            Image()// Individual photo 2
+                .resizable()
+                .scaledToFit()
+            
+            Text()// Description 2
+                .padding()
+
+            Image()// Individual photo 3
+                .resizable()
+                .scaledToFit()
+            
+            Text()// Description 3
+                .padding()
+            
+            Image()// Individual photo 4
+                .resizable()
+                .scaledToFit()
+            
+            Text()// Description 4
+                .padding()
+            
+        }
+        .navigationTitle("PAGE")
     }
 }
 

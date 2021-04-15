@@ -9,7 +9,26 @@ import SwiftUI
 
 struct YWCAView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+
+        ScrollView {
+            
+            Image() // YWCA logo
+                .resizable()
+                .scaledToFit()
+                .padding(.horizontal, 50)
+                .padding(.top, 15)
+                .padding(.bottom, 10)
+
+            Text("""
+                """) // YWCA statement
+                .padding(.horizontal, horizontalTextPadding)
+                .fixedSize(horizontal: false, vertical: true)
+            
+        }
+        .navigationTitle("YWCA Peterborough)
+        .navigationBarTitleDisplayMode(.inline)
+
+        
     }
 }
 

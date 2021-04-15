@@ -25,7 +25,7 @@ struct ContentView: View {
                             Text("PAGE")
                         }
                         NavigationLink(destination: OurStoryView()) {
-                            Text("OurStory")
+                            Text("The OurStory Exhibit")
                         }
                         NavigationLink(destination: YWCAView()) {
                             Text("YWCA Peterborough")
@@ -33,7 +33,7 @@ struct ContentView: View {
                         
                     }
                     
-                    Section(header: Text("Stations")) {
+                    Section(header: Text("The Exhbit")) {
                         NavigationLink(destination: InteractiveView()) {
                             Text("Interactive Art Zone")
                         }
@@ -46,8 +46,11 @@ struct ContentView: View {
 
                     }
                     Section(header: Text("Other")) {
-                        NavigationLink(destination: OurMusicalTheatreProgramView()) {
+                        NavigationLink(destination: AboutAppView()) {
                             Text("About this App")
+                        }
+                        NavigationLink(destination: ThanksToView()) {
+                            Text("Acknowledgements")
                         }
                     }
                 }

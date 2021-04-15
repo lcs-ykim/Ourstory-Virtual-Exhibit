@@ -22,6 +22,7 @@
 		7FDE3808262676CE0041A680 /* ArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDE3807262676CD0041A680 /* ArtView.swift */; };
 		7FDE380B2626773B0041A680 /* LiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDE380A2626773B0041A680 /* LiveView.swift */; };
 		7FDE380E262677CF0041A680 /* AboutAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDE380D262677CF0041A680 /* AboutAppView.swift */; };
+		7FDE38142627D0080041A680 /* ThanksToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDE38132627D0080041A680 /* ThanksToView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		7FDE3807262676CD0041A680 /* ArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtView.swift; sourceTree = "<group>"; };
 		7FDE380A2626773B0041A680 /* LiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveView.swift; sourceTree = "<group>"; };
 		7FDE380D262677CF0041A680 /* AboutAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppView.swift; sourceTree = "<group>"; };
+		7FDE38132627D0080041A680 /* ThanksToView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThanksToView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				7FDE3807262676CD0041A680 /* ArtView.swift */,
 				7FDE380A2626773B0041A680 /* LiveView.swift */,
 				7FDE380D262677CF0041A680 /* AboutAppView.swift */,
+				7FDE38132627D0080041A680 /* ThanksToView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FDE38142627D0080041A680 /* ThanksToView.swift in Sources */,
 				7FDE380B2626773B0041A680 /* LiveView.swift in Sources */,
 				7FDE37F52626748F0041A680 /* Writing.swift in Sources */,
 				7FDE3805262676BF0041A680 /* InteractiveView.swift in Sources */,
