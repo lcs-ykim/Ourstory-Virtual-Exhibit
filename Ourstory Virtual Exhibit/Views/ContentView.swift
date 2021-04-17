@@ -12,7 +12,7 @@ struct ContentView: View {
         
         VStack {
             
-            Image() // PAGE logo
+            Image("PAGElogo")
                 .resizable()
                 .scaledToFit()
                 .padding(.top, 10.0)
@@ -54,7 +54,6 @@ struct ContentView: View {
                         }
                     }
                 }
-                .listRowBackground(Color.black)
             }
             .listStyle(GroupedListStyle())
             

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FDBE03A262B6809004CF883 /* PaintingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDBE039262B6809004CF883 /* PaintingView.swift */; };
+		7FDBE03D262B6AD1004CF883 /* WritingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDBE03C262B6AD1004CF883 /* WritingView.swift */; };
 		7FDE37CE262671860041A680 /* Ourstory_Virtual_ExhibitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDE37CD262671860041A680 /* Ourstory_Virtual_ExhibitApp.swift */; };
 		7FDE37D0262671860041A680 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDE37CF262671860041A680 /* ContentView.swift */; };
 		7FDE37D22626718C0041A680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FDE37D12626718C0041A680 /* Assets.xcassets */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7FDBE039262B6809004CF883 /* PaintingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintingView.swift; sourceTree = "<group>"; };
+		7FDBE03C262B6AD1004CF883 /* WritingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingView.swift; sourceTree = "<group>"; };
 		7FDE37CA262671860041A680 /* Ourstory Virtual Exhibit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ourstory Virtual Exhibit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FDE37CD262671860041A680 /* Ourstory_Virtual_ExhibitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ourstory_Virtual_ExhibitApp.swift; sourceTree = "<group>"; };
 		7FDE37CF262671860041A680 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 				7FDE380A2626773B0041A680 /* LiveView.swift */,
 				7FDE380D262677CF0041A680 /* AboutAppView.swift */,
 				7FDE38132627D0080041A680 /* ThanksToView.swift */,
+				7FDBE039262B6809004CF883 /* PaintingView.swift */,
+				7FDBE03C262B6AD1004CF883 /* WritingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FDBE03A262B6809004CF883 /* PaintingView.swift in Sources */,
 				7FDE38142627D0080041A680 /* ThanksToView.swift in Sources */,
 				7FDE380B2626773B0041A680 /* LiveView.swift in Sources */,
 				7FDE37F52626748F0041A680 /* Writing.swift in Sources */,
@@ -200,6 +207,7 @@
 				7FDE37FC262675AD0041A680 /* PAGEView.swift in Sources */,
 				7FDE37F1262674880041A680 /* Painting.swift in Sources */,
 				7FDE3802262675C80041A680 /* YWCAView.swift in Sources */,
+				7FDBE03D262B6AD1004CF883 /* WritingView.swift in Sources */,
 				7FDE37CE262671860041A680 /* Ourstory_Virtual_ExhibitApp.swift in Sources */,
 				7FDE37E9262673150041A680 /* Videos.swift in Sources */,
 				7FDE3808262676CE0041A680 /* ArtView.swift in Sources */,

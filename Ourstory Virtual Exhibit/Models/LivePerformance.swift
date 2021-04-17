@@ -17,5 +17,4 @@ struct performance: Identifiable {
 }
 
 // MARK: Data
-var performances : [performance] = [performance(title: <#T##String#>,
-                                                description: <#T##String#>)]
+var performances : [performance]

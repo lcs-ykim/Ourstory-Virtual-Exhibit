@@ -8,9 +8,10 @@
 import Foundation
 
 // MARK: Definition
-struct painting: Identifiable {
+struct Painting: Identifiable {
     
     let id = UUID()
+    let artist: String
     let title: String
     let description: String
     let imageId: String
@@ -18,6 +19,7 @@ struct painting: Identifiable {
 }
 
 // MARK: Data
-var paintings : [painting] = [painting(title: <#T##String#>,
-                                 description: <#T##String#>,
-                                 imageId: <#T##String#>)]
+var paintings : [Painting] = [painting(artist: "Yeseo Kim",
+                                       title: "My Life",
+                                       description: "This picture is a snapshot of my life as a girl.",
+                                       imageId: "waterfront")]

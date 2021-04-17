@@ -12,12 +12,12 @@ struct YWCAView: View {
 
         ScrollView {
             
-            Image() // YWCA logo
-                .resizable()
-                .scaledToFit()
-                .padding(.horizontal, 50)
-                .padding(.top, 15)
-                .padding(.bottom, 10)
+//            Image() // YWCA logo
+//                .resizable()
+//                .scaledToFit()
+//                .padding(.horizontal, 50)
+//                .padding(.top, 15)
+//                .padding(.bottom, 10)
 
             Text("""
                 """) // YWCA statement
@@ -25,7 +25,7 @@ struct YWCAView: View {
                 .fixedSize(horizontal: false, vertical: true)
             
         }
-        .navigationTitle("YWCA Peterborough)
+        .navigationTitle("YWCA Peterborough")
         .navigationBarTitleDisplayMode(.inline)
 
         

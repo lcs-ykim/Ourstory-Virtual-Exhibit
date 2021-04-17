@@ -11,12 +11,14 @@ struct AboutAppView: View {
     var body: some View {
         ScrollView {
             
-            Image()// My photo
-                .resizable()
-                .scaledToFit()
-            
-            Text()// What I want to say, "Thanks to Mr.Gordon"
-                .padding()
+            Text("Hello, World!")
+
+//            Image()// My photo
+//                .resizable()
+//                .scaledToFit()
+//
+//            Text()// What I want to say, "Thanks to Mr.Gordon"
+//                .padding()
 
         }
         .navigationTitle("The OurStory Exhibit")

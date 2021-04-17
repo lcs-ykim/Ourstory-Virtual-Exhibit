@@ -8,16 +8,18 @@
 import Foundation
 
 // MARK: Definition
-struct writing: Identifiable {
+struct Writing: Identifiable {
     
     let id = UUID()
+    let writer: String
     let title: String
     let description: String
-    let text: [String]
+    let text: String
     
 }
 
 // MARK: Data
-var writings : [writing] = [writing(title: <#T##String#>,
-                                    description: <#T##String#>,
-                                    text: <#T##[String]#>)]
+var writings : [Writing] = [Writing(writer: "Yeseo Kim",
+                                    title: "My Youth",
+                                    description: "This piece is about the dilemma I faced as a Korean girl.",
+                                    text: "Blah Blah Blah")]

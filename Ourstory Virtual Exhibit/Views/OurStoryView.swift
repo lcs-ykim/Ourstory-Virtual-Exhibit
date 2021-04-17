@@ -11,16 +11,16 @@ struct OurStoryView: View {
     var body: some View {
         ScrollView {
             
-            Image() // exhibit logo
-                .resizable()
-                .scaledToFit()
-                .padding(.horizontal, 50)
-                .padding(.top, 15)
-                .padding(.bottom, 10)
+//            Image() // OurStory logo
+//                .resizable()
+//                .scaledToFit()
+//                .padding(.horizontal, 50)
+//                .padding(.top, 15)
+//                .padding(.bottom, 10)
 
             Text("""
                 """) // date & time, goals, achievement
-                .padding(.horizontal, horizontalTextPadding)
+                .padding(.horizontal)
                 .fixedSize(horizontal: false, vertical: true)
             
         }
