@@ -19,7 +19,7 @@ struct Painting: Identifiable {
 }
 
 // MARK: Data
-var paintings : [Painting] = [painting(artist: "Yeseo Kim",
+var paintings : [Painting] = [Painting(artist: "Yeseo Kim",
                                        title: "My Life",
                                        description: "This picture is a snapshot of my life as a girl.",
                                        imageId: "waterfront")]

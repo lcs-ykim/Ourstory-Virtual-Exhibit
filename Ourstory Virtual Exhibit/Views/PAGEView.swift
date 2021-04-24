@@ -11,42 +11,23 @@ struct PAGEView: View {
     var body: some View {
         ScrollView {
             
-            Text("Hello, World")
-            
-//            Image()// Group photo
+//            Image()// Group photo 1
 //                .resizable()
 //                .scaledToFit()
 //
-//            Text()// Group Intro
-//                .padding()
-//
-//            Image()// Individual photo 1
+            Text("""
+                PAGE, which stands for Passionate Advocates of Gender Equity, is a student-led club at Lakefield College School founded by Yeseo Kim, Minjung Son, Louise Prindiville-Porto, and Jana Rubel, all from class of 2022.
+                """)
+                .padding()
+
+//            Image()// Group photo 2
 //                .resizable()
 //                .scaledToFit()
 //
-//            Text()// Description 1
-//                .padding()
-//
-//            Image()// Individual photo 2
-//                .resizable()
-//                .scaledToFit()
-//
-//            Text()// Description 2
-//                .padding()
-//
-//            Image()// Individual photo 3
-//                .resizable()
-//                .scaledToFit()
-//
-//            Text()// Description 3
-//                .padding()
-//
-//            Image()// Individual photo 4
-//                .resizable()
-//                .scaledToFit()
-//
-//            Text()// Description 4
-//                .padding()
+            Text("""
+                 The group's mission is to bridge gender gaps and advocate for those facing gender-based discrimination through education in LCS community and beyond. For more information, check out the link below.
+                """)
+                .padding()
             
         }
         .navigationTitle("PAGE")

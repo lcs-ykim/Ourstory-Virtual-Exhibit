@@ -21,7 +21,7 @@ struct YWCAView: View {
 
             Text("""
                 """) // YWCA statement
-                .padding(.horizontal, horizontalTextPadding)
+                .padding(.horizontal)
                 .fixedSize(horizontal: false, vertical: true)
             
         }

@@ -14,13 +14,7 @@ struct WritingView: View {
     var body: some View {
 
         ScrollView {
-            
-            VStack(alignment: .leading, spacing: 10) {
-                
-                Image(writing.imageId)
-                .resizable()
-                .scaledToFit()
-                
+                            
                 Group {
                     
                     Text("Title")
@@ -31,7 +25,7 @@ struct WritingView: View {
                     Text("Artist")
                         .font(.title2)
                     
-                    Text(writing.artist)
+                    Text(writing.writer)
                     
                     if !writing.description.isEmpty {
                         
@@ -44,9 +38,7 @@ struct WritingView: View {
                     Text(writing.text)
     
                 }
-                .padding(.horizontal, horizontalTextPadding)
-
-            }
+                .padding(.horizontal)
         
         }
         .navigationTitle(writing.title)
@@ -57,6 +49,6 @@ struct WritingView: View {
 
 struct WritingView_Previews: PreviewProvider {
     static var previews: some View {
-        WritingView()
+        WritingView(writing: writings[0])
     }
 }

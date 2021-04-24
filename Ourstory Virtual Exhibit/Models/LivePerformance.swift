@@ -17,4 +17,4 @@ struct performance: Identifiable {
 }
 
 // MARK: Data
-var performances : [performance]
+// var performances : [performance]
