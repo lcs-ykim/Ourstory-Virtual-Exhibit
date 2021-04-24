@@ -13,6 +13,10 @@ struct ThanksToView: View {
         ScrollView {
             
             Text("""
+                Ms.Lorraine Brown
+                Ms.Allyson Brown
+                School Life Class
+                Diversity, Equity, Inclusion
                 """) // List of names
 
         }
