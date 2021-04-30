@@ -42,10 +42,10 @@ struct ArtView: View {
                     }
 
                 }
-                .listStyle(GroupedListStyle())
-                .navigationBarTitle("Paintings/Writings", displayMode:.inline)
 
             }
+            .listStyle(GroupedListStyle())
+            .navigationBarTitle("Visual Arts and Writings", displayMode:.inline)
 
         }
     }

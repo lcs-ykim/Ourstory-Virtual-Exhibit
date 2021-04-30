@@ -10,56 +10,60 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        VStack {
+        NavigationView {
             
-            Image("PAGElogo")
-                .resizable()
-                .scaledToFit()
-                .padding(.top, 10.0)
-            
-            List {
-                Group {
-                    Section(header: Text("About")) {
+            VStack {
+                
+                Image("PAGElogo")
+                    .resizable()
+                    .scaledToFit()
+                    .padding(.top, 10.0)
+                
+                List {
+                    Group {
+                        Section(header: Text("About")) {
+                            
+                            NavigationLink(destination: PAGEView()) {
+                                Text("PAGE")
+                            }
+                            NavigationLink(destination: YWCAView()) {
+                                Text("YWCA Peterborough")
+                            }
+                            
+                        }
                         
-                        NavigationLink(destination: PAGEView()) {
-                            Text("PAGE")
-                        }
-                        NavigationLink(destination: YWCAView()) {
-                            Text("YWCA Peterborough")
-                        }
-                        
-                    }
-                    
-                    Section(header: Text("The Exhbit")) {
-                        NavigationLink(destination: OurStoryView()) {
-                            Text("The OurStory Exhibit")
-                        }
-                        NavigationLink(destination: InteractiveView()) {
-                            Text("Interactive Art Zone")
-                        }
-                        NavigationLink(destination: ArtView()) {
-                            Text("Visual Arts and Writings")
-                        }
-                        NavigationLink(destination: LiveView()) {
-                            Text("Live performances and Videos")
-                        }
+                        Section(header: Text("The Exhbit")) {
+                            NavigationLink(destination: OurStoryView()) {
+                                Text("The OurStory Exhibit")
+                            }
+                            NavigationLink(destination: InteractiveView()) {
+                                Text("Interactive Art Zone")
+                            }
+                            NavigationLink(destination: ArtView()) {
+                                Text("Visual Arts and Writings")
+                            }
+                            NavigationLink(destination: LiveView()) {
+                                Text("Live performances and Videos")
+                            }
 
-                    }
-                    Section(header: Text("Other")) {
-                        NavigationLink(destination: AboutAppView()) {
-                            Text("About this App")
                         }
-                        NavigationLink(destination: ThanksToView()) {
-                            Text("Acknowledgements")
+                        Section(header: Text("Other")) {
+                            NavigationLink(destination: AboutAppView()) {
+                                Text("About this App")
+                            }
+                            NavigationLink(destination: ThanksToView()) {
+                                Text("Acknowledgements")
+                            }
                         }
                     }
                 }
+                .listStyle(GroupedListStyle())
+                
+                Spacer()
             }
-            .listStyle(GroupedListStyle())
-            
-            Spacer()
+            .navigationBarHidden(true)
+
         }
-        .navigationBarHidden(true)
         
     }
 }
