@@ -44,6 +44,8 @@ struct PaintingView: View {
             }
             
         }
+        .navigationTitle(painting.title)
+        .navigationBarTitleDisplayMode(.inline)
         
     }
     

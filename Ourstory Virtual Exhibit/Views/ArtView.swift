@@ -45,7 +45,7 @@ struct ArtView: View {
 
             }
             .listStyle(GroupedListStyle())
-            .navigationBarTitle("Visual Arts and Writings", displayMode:.inline)
+            .navigationTitle("Visual Arts and Writings")
 
         }
     }

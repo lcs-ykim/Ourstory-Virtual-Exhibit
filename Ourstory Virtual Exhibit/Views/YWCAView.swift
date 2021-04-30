@@ -39,7 +39,6 @@ Prior to the exhibit, PAGE received pre-orders for original tote bags designed b
             
         }
         .navigationTitle("YWCA Peterborough")
-        .navigationBarTitleDisplayMode(.inline)
         
     }
 }

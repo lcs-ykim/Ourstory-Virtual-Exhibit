@@ -22,6 +22,8 @@ struct ThanksToView: View {
                 """) // List of names
 
         }
+        .navigationTitle("Acknowledgements")
+
     }
 }
 

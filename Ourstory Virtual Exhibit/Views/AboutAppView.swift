@@ -21,7 +21,7 @@ struct AboutAppView: View {
 //                .padding()
 
         }
-        .navigationTitle("The OurStory Exhibit")
+        .navigationTitle("About the App")
     }
 }
 

@@ -15,6 +15,7 @@ struct InteractiveView: View {
 The day after the virtual exhibition, PAGE collaborated with DEI to prepare a seriese of interactive activities for students and staff on campus. Members of the community were given the opportunity to create pins, decorate tote bags, and contribute to an art mural which will be later displayed in the hallway.
 """)
                 .padding()
+                .navigationTitle("Interactive Art Zone")
 
 //            // Pins
 //            Image()// Photo 1
@@ -49,7 +50,6 @@ The day after the virtual exhibition, PAGE collaborated with DEI to prepare a se
 //                .padding()
                         
         }
-        .navigationTitle("Interactive Art Zone")
     }
 }
 
