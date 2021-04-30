@@ -15,8 +15,10 @@ struct ThanksToView: View {
             Text("""
                 Ms.Lorraine Brown
                 Ms.Allyson Brown
-                School Life Class
-                Diversity, Equity, Inclusion
+                Mr.Peter O'Grady
+                Ms.Stephanie Willcox
+                Members of School Life Class
+                Mebers of Diversity, Equity, Inclusion
                 """) // List of names
 
         }

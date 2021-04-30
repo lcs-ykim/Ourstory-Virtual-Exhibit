@@ -17,28 +17,33 @@ struct WritingView: View {
                             
                 Group {
                     
-                    Text("Title")
-                        .font(.title)
-                    
                     Text(writing.title)
-                    
-                    Text("Artist")
                         .font(.title2)
+                        .padding()
                     
-                    Text(writing.writer)
+                    Text("By \(writing.writer)")
+                        .font(.title2)
+                        .padding()
                     
                     if !writing.description.isEmpty {
                         
                         Text("Description")
-                            .font(.title3)
+                            .font(.title)
                         
                         Text(writing.description)
+                            .font(.title2)
+                            .padding()
+                        
                     }
                     
-                    Text(writing.text)
+                    ForEach(writing.texts) { text in
+                        
+                        Text(text.paragraph)
+                            .padding()
+                        
+                    }
     
                 }
-                .padding(.horizontal)
         
         }
         .navigationTitle(writing.title)

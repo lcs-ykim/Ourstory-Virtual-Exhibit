@@ -11,7 +11,9 @@ struct InteractiveView: View {
     var body: some View {
         ScrollView {
           
-            Text("Hello, World")
+            Text("""
+The day after the virtual exhibition, PAGE collaborated with DEI to prepare a seriese of interactive activities for students and staff on campus. Members of the community were given the opportunity to create pins, decorate tote bags, and contribute to an art mural which will be later displayed in the hallway.
+""")
 
 //            // Pins
 //            Image()// Photo 1
@@ -26,7 +28,7 @@ struct InteractiveView: View {
 //                .resizable()
 //                .scaledToFit()
 //
-//            Text()// Text 2
+//            Text("Students and staff who purchased the totebags were allowed the privilege to decorate them with paints.")// Text 2
 //                .padding()
 //
 //            // Mural?

@@ -14,42 +14,39 @@ struct PaintingView: View {
     var body: some View {
         
         ScrollView {
-            
-            VStack(alignment: .leading, spacing: 10) {
                 
-                Image(painting.imageId)
-                .resizable()
-                .scaledToFit()
+                Text(painting.title)
+                    .font(.largeTitle)
+                    .multilineTextAlignment(.center)
+                    .padding()
                 
-                Group {
+                Text("By \(painting.artist)")
+                    .font(.title2)
+                    .multilineTextAlignment(.center)
+                    .padding()
+                
+                if !painting.description.isEmpty {
                     
-                    Text("Title")
-                        .font(.title)
-                    
-                    Text(painting.title)
-                    
-                    Text("Artist")
+                    Text("Description")
                         .font(.title2)
                     
-                    Text(painting.artist)
-                    
-                    if !painting.description.isEmpty {
-                        
-                        Text("Description")
-                            .font(.title3)
-                        
-                        Text(painting.description)
-                    }
-    
+                    Text(painting.description)
+                        .multilineTextAlignment(.center)
+                        .padding()
                 }
-                .padding(.horizontal)
-
+                
+                ForEach(painting.images) { image in
+                    
+                    Image(image.imageId)
+                        .resizable()
+                        .scaledToFit()
+                
             }
-        
+            
         }
-        .navigationTitle(painting.title)
-        .navigationBarTitleDisplayMode(.inline)
+        
     }
+    
 }
 
 struct PaintingView_Previews: PreviewProvider {

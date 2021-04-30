@@ -14,12 +14,12 @@ struct Painting: Identifiable {
     let artist: String
     let title: String
     let description: String
-    let imageId: String
+    let images: [Images]
     
 }
 
 // MARK: Data
-var paintings : [Painting] = [Painting(artist: "Yeseo Kim",
-                                       title: "My Life",
-                                       description: "This picture is a snapshot of my life as a girl.",
-                                       imageId: "waterfront")]
+var paintings : [Painting] = [Painting(artist: "Yeseo Kim'22 and Kelly Wang'22",
+                                       title: "Women's Versatility",
+                                       description: "Women are fierce and strong just like any other genders.",
+                                       images: [Images(imageId: "yeseo1"),Images(imageId: "yeseo2"),Images(imageId: "yeseo3")])]
