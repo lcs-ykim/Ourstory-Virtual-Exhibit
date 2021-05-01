@@ -11,43 +11,39 @@ struct ArtView: View {
     
     var body: some View {
         
-        NavigationView {
+        List {
             
-            List {
+            Group {
                 
-                Group {
+                Section(header: Text("Visual Arts")) {
                     
-                    Section(header: Text("Paintings")) {
+                    // Iterate over all paintings
+                    ForEach(paintings) { painting in
                         
-                        // Iterate over all paintings
-                        List(paintings) { painting in
-                            
-                            // Make a navigation link for each painting in the list
-                            NavigationLink(destination: PaintingView(painting: painting)) {
-                                Text(painting.title)
-                            }
+                        // Make a navigation link for each painting in the list
+                        NavigationLink(destination: PaintingView(painting: painting)) {
+                            Text("\(painting.title) by \(painting.artist)")
                         }
                     }
-
-                    Section(header: Text("Writings")) {
-                        
-                        // Iterate over all writings
-                        List(writings) { writing in
-                            
-                            // Make a navigation link for each writing in the list
-                            NavigationLink(destination: WritingView(writing: writing)) {
-                                Text(writing.title)
-                            }
-                        }
-                    }
-
                 }
-
+                
+                Section(header: Text("Writings")) {
+                    
+                    // Iterate over all writings
+                    ForEach(writings) { writing in
+                        
+                        // Make a navigation link for each writing in the list
+                        NavigationLink(destination: WritingView(writing: writing)) {
+                            Text("\(writing.title) by \(writing.writer)")
+                        }
+                    }
+                }
+                
             }
-            .listStyle(GroupedListStyle())
-            .navigationTitle("Visual Arts and Writings")
-
+            
         }
+        .listStyle(GroupedListStyle())
+        .navigationTitle("Visual Arts/Writings")
     }
 }
 

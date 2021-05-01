@@ -29,13 +29,13 @@ struct ContentView: View {
                             NavigationLink(destination: YWCAView()) {
                                 Text("YWCA Peterborough")
                             }
+                            NavigationLink(destination: OurStoryView()) {
+                                Text("The OurStory Exhibition")
+                            }
                             
                         }
                         
-                        Section(header: Text("The Exhbit")) {
-                            NavigationLink(destination: OurStoryView()) {
-                                Text("The OurStory Exhibit")
-                            }
+                        Section(header: Text("The Exhibition")) {
                             NavigationLink(destination: InteractiveView()) {
                                 Text("Interactive Art Zone")
                             }

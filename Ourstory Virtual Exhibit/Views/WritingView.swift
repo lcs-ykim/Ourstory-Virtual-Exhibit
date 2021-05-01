@@ -27,11 +27,8 @@ struct WritingView: View {
                     
                     if !writing.description.isEmpty {
                         
-                        Text("Description")
-                            .font(.title)
-                        
                         Text(writing.description)
-                            .font(.title2)
+                            .font(.title3)
                             .padding()
                         
                     }
@@ -46,7 +43,7 @@ struct WritingView: View {
                 }
         
         }
-        .navigationTitle(writing.title)
+        .navigationTitle("Writings")
         .navigationBarTitleDisplayMode(.inline)
 
     }

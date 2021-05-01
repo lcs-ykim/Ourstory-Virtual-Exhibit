@@ -124,11 +124,11 @@
 				7FDE3801262675C80041A680 /* YWCAView.swift */,
 				7FDE3804262676BF0041A680 /* InteractiveView.swift */,
 				7FDE3807262676CD0041A680 /* ArtView.swift */,
+				7FDBE039262B6809004CF883 /* PaintingView.swift */,
+				7FDBE03C262B6AD1004CF883 /* WritingView.swift */,
 				7FDE380A2626773B0041A680 /* LiveView.swift */,
 				7FDE380D262677CF0041A680 /* AboutAppView.swift */,
 				7FDE38132627D0080041A680 /* ThanksToView.swift */,
-				7FDBE039262B6809004CF883 /* PaintingView.swift */,
-				7FDBE03C262B6AD1004CF883 /* WritingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

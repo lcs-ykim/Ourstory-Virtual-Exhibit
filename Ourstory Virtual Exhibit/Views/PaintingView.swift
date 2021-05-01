@@ -16,7 +16,7 @@ struct PaintingView: View {
         ScrollView {
                 
                 Text(painting.title)
-                    .font(.largeTitle)
+                    .font(.title2)
                     .multilineTextAlignment(.center)
                     .padding()
                 
@@ -27,10 +27,8 @@ struct PaintingView: View {
                 
                 if !painting.description.isEmpty {
                     
-                    Text("Description")
-                        .font(.title2)
-                    
                     Text(painting.description)
+                        .font(.title3)
                         .multilineTextAlignment(.center)
                         .padding()
                 }
@@ -44,8 +42,7 @@ struct PaintingView: View {
             }
             
         }
-        .navigationTitle(painting.title)
-        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarTitle("Visual Arts", displayMode: .inline)
         
     }
     
